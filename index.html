@@ -8,12 +8,18 @@
 </head>
 <body>
     <header>
-        <div class="card_1">
+        <!--card-front-->
+        <div class="card_front" id="card_front"> 
             <div class="selo"></div>
             <div class="logo"></div>
             <div class="campos_Number"></div>
 
         </div>
+
+        <div class="card_back">
+
+        </div>
+
         <section class="card">
             <form>
                 <h4>Card Number</h4>
@@ -38,12 +44,39 @@
 
                 </select>
                 <input type="number" min="2018" max="2032" placeholder="Year">
-                <input type="text" placeholder="CV">
+                <input type="text" placeholder="CV" id="açao">
                 <button>Submit</button>
             </form>
         </section>
         <!--Link da img Nu-->
         <!--https://www.idinheiro.com.br/wp-content/uploads/2020/07/nubank-1200x675.png-->
     </header>
+    <script>
+        açao();
+        function açao(){
+            const cli = document.getElementById('açao')
+            cli.addEventListener('click',function(){
+                var el = document.getElementById("card_front");
+                el.style.zIndex = 1;
+                
+            })
+            var rotated = false;
+
+            document.getElementById('açao').onclick = function() {
+                 var div = document.getElementById('card_front'),
+
+            deg = rotated ? 0 : 195;
+
+        div.style.webkitTransform = 'rotate('+deg+'deg)'; 
+        div.style.mozTransform    = 'rotate('+deg+'deg)'; 
+        div.style.msTransform     = 'rotate('+deg+'deg)'; 
+        div.style.oTransform      = 'rotate('+deg+'deg)'; 
+        div.style.transform       = 'rotate('+deg+'deg)'; 
+
+        rotated = !rotated;
+}
+        }
+         
+    </script>
 </body>
 </html>

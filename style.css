@@ -10,9 +10,9 @@ body,header{
 
 }
 
-.card_1{
+.card_front{
     position: absolute;
-    z-index: 1;
+    z-index: 2;
     top: 70px;
     left: calc(40% - 4px);
     height: 150px;
@@ -20,8 +20,19 @@ body,header{
     background-image: url(https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTbScV2UJCgdI0EFP406ey5uIzD04vh77MD9A&usqp=CAU);
     border-radius: 5px;
     background-size: cover;
+    transition: 4s;
     
+}
 
+.card_back{
+    position: absolute;
+    z-index: 1;
+    top: 70px;
+    left: calc(40% - 4px);
+    height: 150px;
+    width:21%;
+    background-color: rgb(255, 0, 0);
+    
 }
 
 .card{
