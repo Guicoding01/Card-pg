@@ -1,0 +1,93 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body,header{
+    height: 100%;
+    background: rgb(2,0,36);
+    background: linear-gradient(90deg, rgba(2,0,36,1) 3%, rgba(167,35,237,0.8267682072829132) 72%, rgba(139,65,240,1) 100%, rgba(0,212,255,1) 100%);
+
+}
+
+.card_1{
+    position: absolute;
+    z-index: 1;
+    top: 70px;
+    left: calc(40% - 4px);
+    height: 150px;
+    width:21%;
+    background-image: url(https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTbScV2UJCgdI0EFP406ey5uIzD04vh77MD9A&usqp=CAU);
+    border-radius: 5px;
+    background-size: cover;
+    
+
+}
+
+.card{
+    display: flex;
+    justify-content: center;
+    
+}
+form{
+    position: relative;
+    margin-top: 12%;
+    height: 390px;
+    width: 29%;
+    background-color: black;
+    background-color: white;
+    border-radius: 5px;
+    
+} 
+h4:nth-child(1){
+    margin-top: 90px;
+}
+h4{
+    margin-top: 30px;
+    margin-left: 25px;
+    color:#333232;
+}
+form input{
+    margin-left: 25px;
+    margin-top: 6px;
+    width: 83%;
+    height: 28px; 
+    padding-left: 10px;
+    
+}
+form input:nth-child(6){
+    width: 220px;
+    cursor: pointer;
+}
+form input:nth-child(7){
+    width: 80px;
+    padding-left: 
+    10px;
+}
+form input:nth-child(8){
+    width: 80px;
+    padding-left: 10px;
+}
+button{
+    width: 83%;
+    height: 28px;
+    background-color: blueviolet;
+    margin-left: 25px;
+    margin-top: 23px;
+    border: 0;
+    color: white;
+    border-radius: 3px;
+    cursor: pointer;
+    transition: 2s;
+}
+button:hover{
+    transition: 2s;
+    background-color: rgba(34, 1, 65, 0.822);
+}
+.campo{
+    margin-top: 8px;
+    margin-left: 25px;
+    width: 100px;
+    padding-left: 10px;
+    height: 30px;
+}
